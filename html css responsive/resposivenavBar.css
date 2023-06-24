@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.logo-section{
+   flex-grow: 0;
+}
+.handburger-icon{
+    flex-grow: 0;
+}
+
+
+
+
+.bg-body-image{
+    background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png');
+    min-height: 100vh;
+    background-size: cover ;
+    color : #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.body-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+@media (max-width : 767px){
+    .responsive-navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+        order : 1;
+        margin: 10px;
+    }
+    .nav-element{
+        text-decoration: none;
+        color:#594d6d;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .nav-items{
+        display: none;
+    }
+    .line{
+        border-top: 1px solid #e7e5ea;
+        width : 100%;
+    }
+    .bottom-line{
+        border-bottom: 1px solid #e7e5ea;
+        width : 100%;
+    }
+    .signup-button{
+        margin: 10px;
+        border: none;
+        width: 120px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #ffdda9;
+        font-weight: bold;
+    }
+}
+@media (min-width : 768px){
+    .bg-body-image{
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png');
+        min-height: 100vh;
+        background-size: cover ;
+    }
+    .responsive-navbar-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .handburger-icon{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    .bottom-line{
+        display: none;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-element{
+        display:  flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        text-decoration: none;
+        color:#594d6d;
+        font-size: 24px;
+        padding: 5px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    .signup-button{
+        border: none;
+        width: 120px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #ffdda9;
+        font-weight: bold;
+    }
+    
+}
